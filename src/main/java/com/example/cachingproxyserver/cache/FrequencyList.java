@@ -1,7 +1,5 @@
 package com.example.cachingproxyserver.cache;
 
-import static java.nio.file.Files.delete;
-
 public class FrequencyList<K,V> {
     CacheNode<K,V>head=new CacheNode<>(null,null);
     CacheNode<K,V>tail=new CacheNode<>(null,null);

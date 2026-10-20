@@ -2,10 +2,9 @@ package com.example.cachingproxyserver.cache;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Bean;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 @Data
 public class LFUCache<K,V> {
     private static final Logger logger =
@@ -13,8 +12,8 @@ public class LFUCache<K,V> {
     private final int capacity;
     private int minFrequency;
     private int currentSize;
-    private final Map<K,CacheNode<K,V>>cache=new HashMap<>();
-    private final Map<Integer,FrequencyList<K,V>>freqMap=new HashMap<>();
+    private final ConcurrentHashMap<K,CacheNode<K,V>>cache= new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<Integer,FrequencyList<K,V>>freqMap= new ConcurrentHashMap<>();
 
 
     public boolean isContain(K key){

@@ -1,8 +1,8 @@
-package com.example.cachingproxyserver.Controller;
+package com.example.cachingproxyserver.controller;
 
 import com.example.cachingproxyserver.DTO.StatsDTO;
-import com.example.cachingproxyserver.Service.CacheService;
-import com.example.cachingproxyserver.Service.MetricsService;
+import com.example.cachingproxyserver.service.CacheService;
+import com.example.cachingproxyserver.service.MetricsService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

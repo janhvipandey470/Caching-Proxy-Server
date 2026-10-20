@@ -1,4 +1,4 @@
-package com.example.cachingproxyserver.Config;
+package com.example.cachingproxyserver.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

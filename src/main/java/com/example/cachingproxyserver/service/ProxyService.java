@@ -1,4 +1,4 @@
-package com.example.cachingproxyserver.Service;
+package com.example.cachingproxyserver.service;
 
 import com.example.cachingproxyserver.cache.CacheResponse;
 import com.example.cachingproxyserver.client.client;

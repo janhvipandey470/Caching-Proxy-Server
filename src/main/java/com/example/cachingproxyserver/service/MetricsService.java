@@ -1,4 +1,4 @@
-package com.example.cachingproxyserver.Service;
+package com.example.cachingproxyserver.service;
 
 import lombok.Data;
 import org.springframework.stereotype.Service;

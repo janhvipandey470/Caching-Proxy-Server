@@ -1,8 +1,6 @@
-package com.example.cachingproxyserver.Controller;
+package com.example.cachingproxyserver.controller;
 
-import com.example.cachingproxyserver.Service.ProxyService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import com.example.cachingproxyserver.service.ProxyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
